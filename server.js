@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const { Telegraf } = require('telegraf');
 
 // Replace 'YOUR_BOT_TOKEN' with your actual bot token
-const botToken = 'YOUR_BOT_TOKEN';
+const botToken = 'AAGP0QSHRZncdArR1CRkHrtC4r41Zwf4wds';
 const bot = new Telegraf(botToken);
 
 // Use the Telegraf middleware to handle the /send-message route
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.post('/send-message', (req, res) => {
     try {
         // Replace 'TARGET_CHAT_ID' with the actual chat ID where you want to send messages
-        const chatId = 'TARGET_CHAT_ID';
+        const chatId = '6526158330';
         const message = 'Hello from the web app!';
 
         // Use the bot to send a message
